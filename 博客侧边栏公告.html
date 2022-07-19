@@ -1,0 +1,55 @@
+<!-- https://esofar.github.io/cnblogs-theme-silence -->
+<script>
+    window.$silence = {
+        defaultTheme: 'c',
+        defaultMode: 'light',
+        showNavAdmin: false,
+        avatar: 'https://pic.cnblogs.com/avatar/2161583/20220718225657.png',
+        // avatar: 'https://pic.imgdb.cn/item/629899b909475431294cbb01.png',
+        favicon: 'https://pic.imgdb.cn/item/62988ee109475431293db63f.png',
+        hljsln: true,
+        catalog: {
+            enable: true,
+            index: true,
+            active: true,
+            levels: ['h2', 'h3', 'h4']
+        },
+        github: 'https://github.com/brokyz',
+        navbars: [{
+            title: 'CSS案例',
+            url: 'https://brokyz.github.io/MyCSS/'
+        }, {
+            title: 'JS案例',
+            url: 'https://brokyz.github.io/MyJavaScript/'
+        }, {
+            title: '标签',
+            target: '_blank',
+            url: 'https://cnblogs.com/brokyz/tag/'
+        }, {
+            title: '创作',
+            chilren: [{
+                title: '新建随笔',
+                target: '_blank',
+                url: 'https://i.cnblogs.com/posts/edit',
+            }, {
+                title: '管理标签',
+                target: '_blank',
+                url: 'https://i.cnblogs.com/tags',
+            }, {
+                title: '登陆后台',
+                target: '_blank',
+                url: 'https://i.cnblogs.com/',
+            }]
+        }]
+    };
+    // var box1=document.getElementById("under_post_card1");
+    // box1.remove();
+    // var box2=document.getElementById("under_post_card2");
+    // box2.remove();
+</script>
+<script src="https://fastly.jsdelivr.net/gh/esofar/cnblogs-theme-silence@3.0.0-beta3/dist/silence.min.js"></script>
+<script>
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+        document.querySelector(".esa-contents").style.display = "none";
+    }
+</script>
